@@ -1,5 +1,6 @@
 ﻿using Core.Security.Encryption;
 using Core.Security.Entities;
+using Core.Security.Extensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;

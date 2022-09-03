@@ -1,4 +1,7 @@
 ﻿using Core.CrossCuttingConcers.Logging.Serilog.ConfigurationModels;
+using Core.CrossCuttingConcers.Logging.Serilog.Messages;
+using Microsoft.Extensions.Configuration;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
