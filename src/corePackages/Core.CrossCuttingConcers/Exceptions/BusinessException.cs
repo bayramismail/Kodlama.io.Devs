@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Core.CrossCuttingConcers.Exceptions
 {
-    public class AuthorizationException : Exception
+    public class BusinessException : Exception
     {
-        public AuthorizationException(string message) : base(message)
+        public BusinessException(string message) : base(message)
         {
         }
     }
