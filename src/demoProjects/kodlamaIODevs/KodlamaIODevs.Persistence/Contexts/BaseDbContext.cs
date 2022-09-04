@@ -38,6 +38,8 @@ namespace KodlamaIODevs.Persistence.Contexts
                 a.Property(p => p.UpdateDate).HasColumnName("UpdateDate");
                 a.Property(p => p.Status).HasColumnName("Status");
             });
+            ProgrammingLanguage[] programmingLanguageEntitySeeds = { new(1, "C#"), new(2, "Java"),new(3, "Python") };
+            modelBuilder.Entity<ProgrammingLanguage>().HasData(programmingLanguageEntitySeeds);
 
         }
     }
