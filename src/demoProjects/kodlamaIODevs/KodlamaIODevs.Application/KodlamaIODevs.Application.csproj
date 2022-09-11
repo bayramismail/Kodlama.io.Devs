@@ -16,4 +16,9 @@
     <ProjectReference Include="..\KodlamaIODevs.Domain\KodlamaIODevs.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\ProgrammingLanguageTechnologies\Constants\" />
+    <Folder Include="Features\ProgrammingLanguageTechnologies\Rules\" />
+  </ItemGroup>
+
 </Project>

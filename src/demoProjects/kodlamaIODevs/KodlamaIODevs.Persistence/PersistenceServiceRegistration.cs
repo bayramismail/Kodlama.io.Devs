@@ -22,6 +22,7 @@ namespace KodlamaIODevs.Persistence
                                                          configuration.GetConnectionString("MssqlConnectionString")));
 
             services.AddScoped<IProgrammingLanguageRepository, ProgrammingLanguageRepository>();
+            services.AddScoped<IProgrammingLanguageTechnologyRepository, ProgrammingLanguageTechnologyRepository>();
             return services;
         }
     }

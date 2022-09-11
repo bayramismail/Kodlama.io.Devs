@@ -37,10 +37,25 @@ namespace KodlamaIODevs.Persistence.Contexts
                 a.Property(p => p.CreateDate).HasColumnName("CreateDate");
                 a.Property(p => p.UpdateDate).HasColumnName("UpdateDate");
                 a.Property(p => p.Status).HasColumnName("Status");
+                a.HasMany(p => p.ProgrammingLanguageTechnologies);
             });
             ProgrammingLanguage[] programmingLanguageEntitySeeds = { new(1, "C#"), new(2, "Java"),new(3, "Python") };
             modelBuilder.Entity<ProgrammingLanguage>().HasData(programmingLanguageEntitySeeds);
 
+            modelBuilder.Entity<ProgrammingLanguageTechnology>(a =>
+            {
+                a.ToTable("ProgrammingLanguageTechnologies").HasKey(k => k.Id);
+                a.Property(p => p.Id).HasColumnName("Id");
+                a.Property(p => p.ProgrammingLanguageId).HasColumnName("ProgramingLanguageId");
+                a.Property(p => p.Name).HasColumnName("Name");
+                a.Property(p => p.CreateDate).HasColumnName("CreateDate");
+                a.Property(p => p.UpdateDate).HasColumnName("UpdateDate");
+                a.Property(p => p.Status).HasColumnName("Status");
+                a.HasOne(p => p.ProgrammingLanguage);
+
+            });
+            ProgrammingLanguageTechnology[] programmingLanguageTechnologyEntitySeeds = {new(1,1,"WPF"), new(2, 2, "Spring") };
+            modelBuilder.Entity<ProgrammingLanguageTechnology>().HasData(programmingLanguageTechnologyEntitySeeds);
         }
     }
 }

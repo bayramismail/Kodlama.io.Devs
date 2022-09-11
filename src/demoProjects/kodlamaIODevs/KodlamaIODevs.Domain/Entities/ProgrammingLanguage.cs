@@ -13,9 +13,10 @@ namespace KodlamaIODevs.Domain.Entities
     public class ProgrammingLanguage:Entity
     {
         public string Name { get; set; }
+        public virtual ICollection<ProgrammingLanguageTechnology> ProgrammingLanguageTechnologies { get; set; }
         public ProgrammingLanguage()
         {
-
+            ProgrammingLanguageTechnologies = new List<ProgrammingLanguageTechnology>();
         }
 
         public ProgrammingLanguage(int id,string name) : base(id)
