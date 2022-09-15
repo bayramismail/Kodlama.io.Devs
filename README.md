@@ -19,11 +19,14 @@
   Geliştiricilerin koddaki karmaşıklığı yönetmesine yardımcı olmak için vardır. 
   Farklı katmanların (etki alanı modeli katmanıyla sunu katmanı gibi) farklı türleri olabilir ve bu türler arasında çevirileri zorunlu hale getirir.
  
-          ![image](https://user-images.githubusercontent.com/83179561/190401183-c9ef43dc-7db5-421b-bc85-46a026c20d89.png)
+          ![domain-driven-design-microservice](https://user-images.githubusercontent.com/83179561/190402494-4c08bbac-3da2-4bf9-9cff-b91a28660819.png)
                                            
-### Domain Service: Domain nesnelerinin doğal yapısına sığmayan işletme mantığını kapsar. Bunlar CRUD işlemleri değildir. CRUD işelmeri repository bünyesinde gelişir.
+### Domain Service: 
+Domain nesnelerinin doğal yapısına sığmayan işletme mantığını kapsar. Bunlar CRUD işlemleri değildir. CRUD işelmeri repository bünyesinde gelişir.
 
-### Application Service: Sistem dışı kullanıcılar için oluşturulur. Örneğin Web servisleri veya Web arayüzleri bu servislerle haberleşirler.
+### Application Service:
+Sistem dışı kullanıcılar için oluşturulur. Örneğin Web servisleri veya Web arayüzleri bu servislerle haberleşirler.
 Kullanıcılara sunulan CRUD işlemleri burada tanımlanabilir.
 
-### Infrastructure Service: Dış kaynaklarla yapılan iletişimler için oluşturulur. (File, SMS, SMTP, MSMQ).
+### Infrastructure Service: 
+ Dış kaynaklarla yapılan iletişimler için oluşturulur. (File, SMS, SMTP, MSMQ).
