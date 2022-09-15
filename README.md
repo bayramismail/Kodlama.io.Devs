@@ -31,3 +31,6 @@ Kullanıcılara sunulan CRUD işlemleri burada tanımlanabilir.
 
 ### Infrastructure : 
  Dış kaynaklarla yapılan iletişimler için oluşturulur. (File, SMS, SMTP, MSMQ).
+# Kaynak
+   https://www.bayramucuncu.com/category/domain-driven-design/
+   https://docs.microsoft.com/tr-tr/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/ddd-oriented-microservice
