@@ -22,12 +22,12 @@
           
  ![domain-driven-design-microservice](https://user-images.githubusercontent.com/83179561/190402680-f2c334af-6470-42bc-96c4-ffec4b1141fc.png)
                    
-### Domain Service: 
+### Domain : 
 Domain nesnelerinin doğal yapısına sığmayan işletme mantığını kapsar. Bunlar CRUD işlemleri değildir. CRUD işelmeri repository bünyesinde gelişir.
 
-### Application Service:
+### Application :
 Sistem dışı kullanıcılar için oluşturulur. Örneğin Web servisleri veya Web arayüzleri bu servislerle haberleşirler.
 Kullanıcılara sunulan CRUD işlemleri burada tanımlanabilir.
 
-### Infrastructure Service: 
+### Infrastructure : 
  Dış kaynaklarla yapılan iletişimler için oluşturulur. (File, SMS, SMTP, MSMQ).
